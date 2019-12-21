@@ -246,7 +246,8 @@ public class Location_Activity extends CheckPermissionsActivity
 					sb.append("错误信息:" + location.getErrorInfo() + "\n");
 					sb.append("错误描述:" + location.getLocationDetail() + "\n");
 				}
-				sb.append("***定位质量报告***").append("\n");
+				sb.append("***定位质量报告***")
+						.append("\n");
 				sb.append("* WIFI开关：").append(location.getLocationQualityReport().isWifiAble() ? "开启":"关闭").append("\n");
 				sb.append("* GPS状态：").append(getGPSStatusString(location.getLocationQualityReport().getGPSStatus())).append("\n");
 				sb.append("* GPS星数：").append(location.getLocationQualityReport().getGPSSatellites()).append("\n");
